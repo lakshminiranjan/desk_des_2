@@ -1,3 +1,4 @@
+/* Original SCSS code with remaining two media queries added */
 .root {
   width: 100vw;
   height: 100vh;
@@ -6,6 +7,7 @@
   background-color: #00bdd6;
   overflow: hidden;
 }
+
 .profile_container_1 {
   flex: 1;
   align-self: stretch;
@@ -15,22 +17,27 @@
   border-radius: 8px;
   background-color: #fff;
   overflow: hidden;
+
   &__profile_details_container {
     width: min-content;
     height: min-content;
     justify-content: center;
     align-items: center;
     gap: 95px;
+
     &__image {
       width: 437px;
       height: 420px;
       border-radius: 6px;
-      background-image:/* webpackIgnore: true */ url('/assets/image.jpeg');
+      background-image: /* webpackIgnore: true */ url("/assets/image.jpeg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      box-shadow: 0px 8px 17px 0px #171a1f26, 0px 0px 2px 0px #171a1f1f;
+      box-shadow:
+        0px 8px 17px 0px #171a1f26,
+        0px 0px 2px 0px #171a1f1f;
     }
+
     &__frame6 {
       width: min-content;
       height: min-content;
@@ -38,39 +45,70 @@
       align-items: flex-start;
       gap: 12px;
       padding: 0 14px;
+
       &__name {
         color: #171a1f;
         font-size: 32px;
         line-height: 48px;
-        font-family: Epilogue, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-          'Liberation Sans', sans-serif;
+        font-family:
+          Epilogue,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          "Liberation Sans",
+          sans-serif;
         width: 279px;
         height: 52px;
         flex-direction: column;
         transform: matrix(1, 0, 0, 1, 0, 0);
       }
+
       &__role {
         color: #171a1f;
         font-size: 24px;
         line-height: 36px;
-        font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-          'Liberation Sans', sans-serif;
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          "Liberation Sans",
+          sans-serif;
         width: 325px;
         height: 37px;
         flex-direction: column;
         transform: matrix(1, 0, 0, 1, 0, 0);
       }
+
       &__description {
         color: #171a1f;
         font-size: 16px;
         line-height: 19px;
-        font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-          'Liberation Sans', sans-serif;
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          "Liberation Sans",
+          sans-serif;
         width: 486px;
         height: 119px;
         flex-direction: column;
         transform: matrix(1, 0, 0, 1, 0, 0);
       }
+
       &__textboxEmail {
         width: 500px;
         height: 60px;
@@ -79,25 +117,38 @@
         padding: 18px 16px;
         border-radius: 6px;
         background-color: #f3f4f6;
+
         &__mobile_Number {
           width: 20px;
           height: 20px;
+
           &__icon {
             width: 100%;
             height: 100%;
           }
         }
+
         &__email {
           color: #bcc1ca;
           font-size: 16px;
           line-height: 26px;
-          font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-            'Liberation Sans', sans-serif;
+          font-family:
+            Inter,
+            system-ui,
+            -apple-system,
+            "Segoe UI",
+            Roboto,
+            "Helvetica Neue",
+            Arial,
+            "Noto Sans",
+            "Liberation Sans",
+            sans-serif;
           width: 281px;
           height: min-content;
           flex-direction: column;
         }
       }
+
       &__textboxMobile {
         width: 500px;
         height: 60px;
@@ -106,25 +157,38 @@
         padding: 18px 16px;
         border-radius: 6px;
         background-color: #f3f4f6;
+
         &__mobile_Icon {
           width: 20px;
           height: 20px;
+
           &__icon2 {
             width: 100%;
             height: 100%;
           }
         }
+
         &__mobile_Number2 {
           color: #bcc1ca;
           font-size: 16px;
           line-height: 26px;
-          font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-            'Liberation Sans', sans-serif;
+          font-family:
+            Inter,
+            system-ui,
+            -apple-system,
+            "Segoe UI",
+            Roboto,
+            "Helvetica Neue",
+            Arial,
+            "Noto Sans",
+            "Liberation Sans",
+            sans-serif;
           width: 113px;
           height: min-content;
           flex-direction: column;
         }
       }
+
       &__textboxLocation {
         width: 500px;
         height: 60px;
@@ -133,23 +197,185 @@
         padding: 18px 16px;
         border-radius: 6px;
         background-color: #f3f4f6;
+
         &__location_Icon {
           width: 20px;
           height: 20px;
+
           &__icon3 {
             width: 100%;
             height: 100%;
           }
         }
+
         &__address {
           color: #bcc1ca;
           font-size: 16px;
           line-height: 26px;
-          font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-            'Liberation Sans', sans-serif;
+          font-family:
+            Inter,
+            system-ui,
+            -apple-system,
+            "Segoe UI",
+            Roboto,
+            "Helvetica Neue",
+            Arial,
+            "Noto Sans",
+            "Liberation Sans",
+            sans-serif;
           width: 166px;
           height: min-content;
           flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive CSS */
+/* Responsive CSS */
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+  .profile_container_1 {
+    padding: 46px 29px;
+
+    &__profile_details_container {
+      gap: 48px;
+      flex-direction: column;
+      align-items: center;
+
+      &__image {
+        width: 218px;
+        height: 210px;
+        border-radius: 0; /* Update border-radius to make image rectangular */
+      }
+
+      &__frame6 {
+        gap: 6px;
+        padding: 0 12px;
+        text-align: center;
+
+        &__name {
+          font-size: 16px;
+          line-height: 24px;
+          width: 140px;
+          height: 26px;
+        }
+
+        &__role {
+          font-size: 12px;
+          line-height: 18px;
+          width: 163px;
+          height: 19px;
+        }
+
+        &__description {
+          font-size: 8px;
+          line-height: 10px;
+          width: 243px;
+          height: 60px;
+        }
+
+        &__textboxEmail,
+        &__textboxMobile,
+        &__textboxLocation {
+          width: 244px;
+          height: 31px;
+          padding: 10px 8px;
+
+          &__email_Icon,
+          &__mobile_Icon,
+          &__location_Icon {
+            width: 10px;
+            height: 10px;
+          }
+
+          &__email,
+          &__mobile_Number2,
+          &__address {
+            font-size: 8px;
+            line-height: 13px;
+            text-align: center;
+          }
+          &__email,
+          &__mobile_Number2,
+          &__address {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .profile_container_1 {
+    padding: 46px 29px;
+
+    &__profile_details_container {
+      flex-direction: column;
+      gap: 24px;
+
+      &__image {
+        width: 120px;
+        height: 120px;
+        border-radius: 0; /* Update border-radius to make image rectangular */
+        margin: 0 auto;
+      }
+
+      &__frame6 {
+        gap: 12px;
+        padding: 0 12px;
+
+        &__name {
+          font-size: 16px;
+          line-height: 24px;
+          width: 140px;
+          height: 26px;
+        }
+
+        &__role {
+          font-size: 12px;
+          line-height: 18px;
+          width: 163px;
+          height: 19px;
+        }
+
+        &__description {
+          font-size: 8px;
+          line-height: 10px;
+          width: 243px;
+          height: 60px;
+          align-items: baseline;
+        }
+
+        &__textboxEmail,
+        &__textboxMobile,
+        &__textboxLocation {
+          width: 244px;
+          height: 31px;
+          padding: 10px 8px;
+          margin: 0 auto;
+
+          &__email_Icon,
+          &__mobile_Icon,
+          &__location_Icon {
+            width: 10px;
+            height: 10px;
+          }
+
+          &__email,
+          &__mobile_Number2,
+          &__address {
+            font-size: 8px;
+            line-height: 13px;
+            text-align: center;
+          }
+          &__email,
+          &__mobile_Number2,
+          &__address {
+            text-align: left;
+          }
         }
       }
     }
