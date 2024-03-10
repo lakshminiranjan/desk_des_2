@@ -376,6 +376,11 @@
           &__address {
             text-align: left;
           }
+          &__mobile_Icon,
+          &__location_Icon {
+            width: 17px;
+            height: 17px;
+          }
         }
       }
     }
