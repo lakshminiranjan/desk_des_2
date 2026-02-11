@@ -1,0 +1,62 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #e8e9f4;
+  background: #101425;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(circle at top right, #1a2352, #0e1222 40%); }
+
+.app-shell {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header h1 { margin-bottom: 0.5rem; }
+header p { color: #aeb4d8; margin-top: 0; }
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.control-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  color: #111425;
+  background: #76f3b2;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.secondary { background: #e3e8ff; }
+
+ul { padding-left: 1.2rem; }
+li { margin-bottom: 0.4rem; }
+
+.helper { color: #aeb4d8; font-size: 0.9rem; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre-wrap; }
+pre {
+  white-space: pre-wrap;
+  background: #090c19;
+  border-radius: 8px;
+  padding: 0.75rem;
+  overflow-x: auto;
+}
